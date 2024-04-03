@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Page</title>
+<link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="registration-container">
+        <form>
+            <h2>Sign Up</h2>
+            <div class="input-container">
+                
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-container">
+                
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-container">
+               
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-container">
+               
+                <input type="Phone Number" id="Phone Number" name="Phone Number" placeholder="Enter your Phone Number" required>
+            </div>
+
+            <div class="input-container">
+                
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="input-container">
+                
+                <select id="gender" name="gender" required>
+                    <option value="" selected disabled>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+</body>
+<!---->
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js"></script>
+
+<script src="registration.js"></script>
+</html>
